@@ -13,25 +13,10 @@
     <description>Builds, tests, and runs the project testANT.</description>
     <import file="nbproject/build-impl.xml"/>
 
-    <target name="-pre-compile">
-        <echo>Compilando....</echo>
-    </target>
-
-    <target name="-post-compile">
-        <echo>Fin de la compilacion</echo>
-    </target>
-
-    <target name="-pre-jar">
+    <target name="Armar Jar">
         <echo>Armando el JAR...</echo>
 	<jar 	destfile = "dist/lib/java-ci-pipeline.jar"
 		basedir = "build/classes/CalculadoraPck"/>
     </target>
 
-    <target name="-post-jar">
-        <echo>JAR construido</echo>
-    </target>
-
-    <target name="-post-clean">
-        <echo>Limpieza de archivos generados anteriormente</echo>
-    </target>
 </project>
