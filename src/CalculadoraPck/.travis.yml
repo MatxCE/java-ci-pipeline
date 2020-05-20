@@ -4,8 +4,3 @@ jdk:
   - oraclejdk8
   - openjdk8
   
-before_script:
-   - composer install --no-interaction 
- 
-script:
-    - ../../test/Tests/TestCalculadora.java
