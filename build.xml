@@ -36,7 +36,7 @@
 		basedir = "build/classes/CalculadoraPck"/>
     </target>
 -->
-<target name="java-ci-pipeline" depends="jar">
+<target name="java-ci-pipeline" >
  <property name="store.jar.name" value="java-ci-pipeline"/>
         <property name="store.dir" value="store"/>
         <property name="store.jar" value="${store.dir}/${store.jar.name}.jar"/>
