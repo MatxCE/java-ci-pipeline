@@ -2,7 +2,6 @@
 <project name="java-ci-pipeline" basedir="." >
 	
 	<property name="src.dir" value="src"/>
-	<property name="build.dir" value="build"/>
 	<property name="classes.dir" value="build/classes"/>
 	<property name="jar.dir" value="build/jar"/>
 	<property name="lib.dir" value="lib"/>
@@ -20,11 +19,11 @@
 	
 	<target name="jar" depends="compile">
 		<mkdir dir="${jar.dir}"/>
-		<jar destfile="${jar.dir}/${ant.project.name}.jar" basedir="${classes.dir}">
-		</jar>
+		<jar destfile="${jar.dir}/${ant.project.name}.jar" basedir="${classes.dir}"/>
 	</target>
 	
 	<target name="junit" depends="jar">
+        
 		<junit printsummary="yes">
 			<classpath>
 				<path refid="classpath"/>
@@ -35,7 +34,9 @@
 				<fileset dir="${src.dir}" includes="**/*TestCalculadora.java"/>
 			</batchtest>
 		</junit>
+        
 	</target>
-	<target name = "test" depends ="compile,jar,junit">
-    </target>
+    
+	<target name = "test" depends ="compile,jar,junit"/>
+    
 </project>
