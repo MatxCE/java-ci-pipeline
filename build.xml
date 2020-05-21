@@ -35,7 +35,7 @@
 			</classpath>
 			
 			<batchtest fork="yes">
-				<fileset dir="${src.dir}" includes="**/*Test.java"/>
+				<fileset dir="${src.dir}" includes="**/*TestCalculadora.java"/>
 			</batchtest>
 		</junit>
 	</target>
