@@ -1,5 +1,5 @@
 language: java
-install: ant java-ci-pipeline
+#install: ant java-ci-pipeline
 jdk:
   - oraclejdk8
   - openjdk8
