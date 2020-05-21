@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project name="Calculator" basedir="." >
+<project name="java-ci-pipeline" basedir="." >
 	
 	<property name="src.dir" value="src"/>
 	<property name="build.dir" value="build"/>
@@ -35,7 +35,7 @@
 			</classpath>
 			
 			<batchtest fork="yes">
-				<fileset dir="test" includes="**/*TestCalculadora.java"/>
+				<fileset dir="${src.dir}" includes="**/*TestCalculadora.java"/>
 			</batchtest>
 		</junit>
 	</target>
