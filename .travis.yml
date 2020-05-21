@@ -1,7 +1,9 @@
+dist: xenial
 language: java
-#install: ant java-ci-pipeline
+addons:
+  apt:
+    packages:
+      - ant
 jdk:
-  - oraclejdk7
-  
-#dist: trusty
-  
+  - openjdk8
+  - oraclejdk8
