@@ -1,9 +1,11 @@
-dist: xenial
 language: java
-addons:
-  apt:
-    packages:
-      - ant
 jdk:
-  - openjdk8
-  - oraclejdk10
+- oraclejdk14
+
+script: ant clean
+script: ant compile
+script: ant jar
+script: ant junit
+
+before_script:
+   - sudo apt-get install ant-optional
