@@ -1,6 +1,7 @@
 language: java
 #install: ant java-ci-pipeline
 jdk:
-  - oraclejdk8
-  - openjdk8
+  - oraclejdk7
+  
+#dist: trusty
   
