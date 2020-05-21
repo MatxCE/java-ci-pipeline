@@ -6,4 +6,4 @@ addons:
       - ant
 jdk:
   - openjdk8
-  - oraclejdk8
+  - oraclejdk10
