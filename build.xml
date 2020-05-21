@@ -3,8 +3,8 @@
 	
 	<property name="src.dir" value="src"/>
 	<property name="build.dir" value="build"/>
-	<property name="classes.dir" value="${build.dir}/classes"/>
-	<property name="jar.dir" value="${build.dir}/jar"/>
+	<property name="classes.dir" value="build/classes"/>
+	<property name="jar.dir" value="build/jar"/>
 	<property name="lib.dir" value="lib"/>
 	
 	<path id="classpath">
@@ -12,9 +12,6 @@
 	</path>
 	<path id="application" location="${jar.dir}/${ant.project.name}.jar"/>
 
-	<target name="clean">
-		<delete dir="${build.dir}"/>
-	</target>
 	
 	<target name="compile">
 		<mkdir dir="${classes.dir}"/>
@@ -39,7 +36,6 @@
 			</batchtest>
 		</junit>
 	</target>
-	
-	
-	<target name="clean-build" depends="clean,jar"/>
+	<target name = "test" depends ="compile,jar,junit">
+    </target>
 </project>
