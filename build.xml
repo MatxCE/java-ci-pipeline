@@ -2,7 +2,6 @@
 <project name="Calculator" basedir="." >
 	
 	<property name="src.dir" value="src"/>
-	<property name="test.dir" value="test"/>
 	<property name="build.dir" value="build"/>
 	<property name="classes.dir" value="${build.dir}/classes"/>
 	<property name="jar.dir" value="${build.dir}/jar"/>
@@ -36,7 +35,7 @@
 			</classpath>
 			
 			<batchtest fork="yes">
-				<fileset dir="${test.dir}" includes="**/*TestCalculadora.java"/>
+				<fileset dir="test" includes="**/*TestCalculadora.java"/>
 			</batchtest>
 		</junit>
 	</target>
